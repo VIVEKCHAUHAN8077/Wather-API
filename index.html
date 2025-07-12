@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- font family link here -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"rel="stylesheet"/>
+      
+    <!-- css link here -->
+    <link rel="stylesheet" href="weather.css"/>
+
+</head>
+<body>
+    
+    <div class="container-box">
+        <video autoplay loop muted src="https://videos.pexels.com/video-files/854002/854002-hd_1920_1080_24fps.mp4" class="background-video">
+
+        </video>
+
+        <div class="circle-1"></div>
+        <div class="circle-2"></div>
+
+        <div class="weather-box">
+
+            <div class="input-box">
+                <input type="text" placeholder="Enter a city name">
+                 <button onclick="hideShow()">Search</button>
+            </div>
+
+            <div class="error">
+                <p>Invalid city name</p>
+            </div>
+
+            <div class="hide-box">
+                <div class="hide-box-2">
+                    <div class="city-name-box">
+                        <h4></h4>
+                        <div class="cloud-box">
+                           <p class="cloud-box1"></p>
+                        </div>
+                    </div>
+
+                    <div class="icon-img-box">
+                        <!-- <img src="/E-commerce/images-Ecommerce/clouds.png"> -->
+                    </div>
+                    <div class="degree-box">
+                           <h1 class="degree-box1"></h1>
+                    </div>
+       
+                    <div class="temperature-box">
+                       <div class="min-box">
+                           <h5>min</h5>
+                           <p class="min-box1"></p>
+                       </div>
+                       <div class="max-box">
+                           <h5>max</h5>
+                           <p class="max-box1"></p>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="weather.js"></script>
+</body>
+</html>
